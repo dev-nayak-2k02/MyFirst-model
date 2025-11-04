@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3d-model-viewer</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
 
+        body{
+            background-color: bisque;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .model-container{
+            height: 700px;
+            width: 700px;
+        }
+
+        model-viewer{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="model-container">
-        <model-viewer alt="3d model to be seen" src="./assets/anime_girl_mia_dancing_preview.glb">
+        <model-viewer alt="3d model to be seen" src="./assets/anime_girl_mia_dancing_preview.glb"
+        >
 
         </model-viewer>
     </div>
